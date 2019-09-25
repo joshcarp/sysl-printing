@@ -16,3 +16,6 @@ testapp "Fruit API" [package="package_foo"]:
 
     !alias EXTERNAL_MysteriousObject:
         string
+
+    !alias EXTERNAL_OtherMysteriousObject:
+        float
