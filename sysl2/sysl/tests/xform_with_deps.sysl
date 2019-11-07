@@ -22,7 +22,7 @@ TransformDeps:
 
           out = Join(pkgList flatten(.out), "")
         )
-        out = Join(calls flatten(.out),"")
+        out = Join(calls flatten(.out),",")
       )
 
       comment =  myList flatten(.out)
