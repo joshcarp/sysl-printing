@@ -1,7 +1,9 @@
 package printer
 
 import (
+	"bytes"
 	"fmt"
+	"io"
 	"strings"
 
 	"github.com/joshcarp/sysl-printing/pkg/syslutil"
@@ -9,113 +11,118 @@ import (
 	"github.com/joshcarp/sysl-printing/pkg/sysl"
 )
 
-func PrintModule(mod *sysl.Module) {
+type Printer struct {
+	io.Writer
+}
 
+func NewPrinter(buf *bytes.Buffer) *Printer {
+	return &Printer{Writer: buf}
+}
+
+//PrintModule Prints a whole module, calling
+func (p *Printer) PrintModule(mod *sysl.Module) {
 	for _, A := range mod.Apps {
-		PrintApplication(A)
+		p.PrintApplication(A)
 	}
 }
 
-func PrintParam(param []*sysl.Param) {
-	params := "("
-	for i, p := range param {
-		params += p.Name + " <: " + ParamType(p)
-		if i != len(param)-1 {
-			params += ","
+// Endpoint(This <: ParamHere):
+func (p *Printer) PrintParam(params []*sysl.Param) {
+	ans := "("
+	for i, param := range params {
+		ans += param.Name + " <: " + p.ParamType(param)
+		if i != len(params)-1 {
+			ans += ","
 		}
 	}
-	params += ")"
-	fmt.Print(params)
+	ans += ")"
+	fmt.Fprint(p.Writer, ans)
 }
 
-func PrintApplication(A *sysl.Application) {
-	fmt.Printf("%s:\n", A.Name.GetPart()[0])
+// App:
+func (p *Printer) PrintApplication(A *sysl.Application) {
+	fmt.Fprintf(p.Writer, "%s:\n", A.Name.GetPart()[0])
 	for key, val := range A.Attrs {
-		PrintAttrs(key, val)
+		p.PrintAttrs(key, val)
 	}
 	for _, e := range A.Endpoints {
-		PrintEndpoint(e)
+		p.PrintEndpoint(e)
 	}
 	for typeName, t := range A.Types {
-		PrintTypeDecl(typeName, t)
+		p.PrintTypeDecl(typeName, t)
 	}
 }
 
-func PrintEndpoint(E *sysl.Endpoint) {
-	fmt.Printf("    %s", E.Name)
+// Endpoint:
+func (p *Printer) PrintEndpoint(E *sysl.Endpoint) {
+	fmt.Fprintf(p.Writer, "    %s", E.Name)
 
 	if len(E.Param) != 0 {
-		PrintParam(E.Param)
+		p.PrintParam(E.Param)
 	}
-	fmt.Printf(":\n")
+	fmt.Fprintf(p.Writer, ":\n")
 
 	for _, stmnt := range E.Stmt {
-		PrintStatement(stmnt)
+		p.PrintStatement(stmnt)
 	}
 }
 
-func PrintTypeDecl(key string, t *sysl.Type) {
-	fmt.Printf("    !type %s:\n", key)
+// !type Foo:
+//     this <: string
+func (p *Printer) PrintTypeDecl(key string, t *sysl.Type) {
+	fmt.Fprintf(p.Writer, "    !type %s:\n", key)
 	if tuple := t.GetTuple(); tuple != nil {
 		for key, val := range tuple.AttrDefs {
 			typeClass, typeIdent := syslutil.GetTypeDetail(val)
 			if typeClass == "primitive" {
 				typeIdent = strings.ToLower(typeIdent)
 			}
-			fmt.Printf("        %s <: %s\n", key, typeIdent)
+			fmt.Fprintf(p.Writer, "        %s <: %s\n", key, typeIdent)
 		}
 	}
 
 }
 
-func PrintStatement(S *sysl.Statement) {
+// return ret <: string
+func (p *Printer) PrintStatement(S *sysl.Statement) {
 	if call := S.GetCall(); call != nil {
-		PrintCall(call)
+		p.PrintCall(call)
 	}
 	if action := S.GetAction(); action != nil {
-		PrintAction(action)
+		p.PrintAction(action)
 	}
 	if ret := S.GetRet(); ret != nil {
-		PrintReturn(ret)
+		p.PrintReturn(ret)
 	}
 }
 
-func PrintReturn(R *sysl.Return) {
-	fmt.Printf("        return ret <: %s\n", R.Payload)
+// return foo <: type
+func (p *Printer) PrintReturn(R *sysl.Return) {
+	fmt.Fprintf(p.Writer, "        return ret <: %s\n", R.Payload)
 }
 
-func PrintAction(A *sysl.Action) {
-	fmt.Printf("        %s\n", A.GetAction())
+// lookup data
+func (p *Printer) PrintAction(A *sysl.Action) {
+	fmt.Fprintf(p.Writer, "        %s\n", A.GetAction())
 }
 
-func PrintAttrs(key string, A *sysl.Attribute) {
-	fmt.Printf(`    @%s="%s"`, key, A.GetS())
-	fmt.Println()
+// @owner="server"
+func (p *Printer) PrintAttrs(key string, A *sysl.Attribute) {
+	fmt.Fprintf(p.Writer, "    @%s=\"%s\"\n", key, A.GetS())
 }
 
-func ParamType(P *sysl.Param) string {
+//foo(this <: <ParamType>):
+func (p *Printer) ParamType(P *sysl.Param) string {
 	if P.Type == nil {
 		return ""
 	}
 	if P.Type.GetTypeRef() == nil {
 		return ""
 	}
-	if P.Type.GetTypeRef().Ref == nil {
-		return ""
-	}
-	if P.Type.GetTypeRef().Ref.Appname == nil {
-		return ""
-	}
-	if P.Type.GetTypeRef().Ref.Appname.Part == nil {
-		return ""
-	}
 	return strings.Join(P.Type.GetTypeRef().Ref.Appname.Part, "")
 }
 
-func PrintType(T *sysl.Type) string {
-	return strings.Join(T.GetTypeRef().Ref.Appname.Part, "")
-}
-
-func PrintCall(c *sysl.Call) {
-	fmt.Printf("        %s <- %s\n", strings.Join(c.Target.GetPart(), ""), c.GetEndpoint())
+// AnApp <- AnEndpoint
+func (p *Printer) PrintCall(c *sysl.Call) {
+	fmt.Fprintf(p.Writer, "        %s <- %s\n", strings.Join(c.Target.GetPart(), ""), c.GetEndpoint())
 }
