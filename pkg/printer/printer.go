@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/anz-bank/sysl/pkg/syslutil"
+
 	"github.com/anz-bank/sysl/pkg/sysl"
 )
 
@@ -32,7 +34,9 @@ func PrintApplication(A *sysl.Application) {
 	}
 	for _, e := range A.Endpoints {
 		PrintEndpoint(e)
-
+	}
+	for typeName, t := range A.Types {
+		PrintTypeDecl(typeName, t)
 	}
 }
 
@@ -46,6 +50,14 @@ func PrintEndpoint(E *sysl.Endpoint) {
 
 	for _, stmnt := range E.Stmt {
 		PrintStatement(stmnt)
+	}
+}
+
+func PrintTypeDecl(key string, t *sysl.Type) {
+	fmt.Printf("    !type %s:\n", key)
+	for key, val := range t.GetTuple().AttrDefs {
+		_, that := syslutil.GetTypeDetail(val)
+		fmt.Printf("        %s <: %s\n", key, strings.ToLower(that))
 	}
 }
 

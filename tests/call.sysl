@@ -20,6 +20,7 @@ Server[owner="server"]:
   !type LoginData:
     username <: string
     password <: string
+    foo <: LoginResponse
 
   !type LoginResponse:
     message <: string
