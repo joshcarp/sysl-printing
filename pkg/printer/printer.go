@@ -56,8 +56,11 @@ func PrintEndpoint(E *sysl.Endpoint) {
 func PrintTypeDecl(key string, t *sysl.Type) {
 	fmt.Printf("    !type %s:\n", key)
 	for key, val := range t.GetTuple().AttrDefs {
-		_, that := syslutil.GetTypeDetail(val)
-		fmt.Printf("        %s <: %s\n", key, strings.ToLower(that))
+		typeClass, typeIdent := syslutil.GetTypeDetail(val)
+		if typeClass == "primitive" {
+			typeIdent = strings.ToLower(typeIdent)
+		}
+		fmt.Printf("        %s <: %s\n", key, typeIdent)
 	}
 }
 
