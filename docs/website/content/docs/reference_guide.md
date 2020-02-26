@@ -79,13 +79,13 @@ Notes about sysl syntax:
 
 Sysl supports following data types out of the box.
 ```
-double 
-int64 
-float64 
-string 
-bool 
-date.Date 
-time.Time 
+double
+int64
+float64
+string
+bool
+date.Date
+time.Time
 ```
 We can Also define our own datatypes using the `!type` keyword within an application.
 
@@ -105,11 +105,11 @@ An endpoint can return response to the caller. Everything after `return` keyword
 
 ```
 MobileApp:
-  Login: 
+  Login:
     return string
-  Search: 
+  Search:
     return string
-  Order: 
+  Order:
     return sequence of string
 ```
 
@@ -138,7 +138,7 @@ Server:
 A standalone service that does not interact with anybody is not a very useful service. Use the `call` syntax to show interaction between two services.
 
 In the below example, MobileApp makes a call to backend Server which in turn calls database layer.
-  
+
 ```
 MobileApp:
   Login:
@@ -338,7 +338,7 @@ See [Data Models](#data-models) on types of data models and how to render them.
 
 ## Type
 `!type`
-The type keyword is used to define a type. 
+The type keyword is used to define a type.
 In the following example we define a `Post` type made up of multiple attributes.
 ```
   !type Post:
@@ -362,7 +362,7 @@ Views are sysl's functions; we can use them in the transformation language, see 
 
 ## Union
 `!union`
-Unions are a union type; 
+Unions are a union type;
 `!union string, int32`
 can either be a string, int32, but not both.
 
@@ -384,8 +384,8 @@ can either be a string, int32, but not both.
 | pb      | Binary Protocol Buffer files of the Sysl definitions |
 | protobuf  | Text based Protocol Buffer files of the Sysl definitions |
 | export  | Export sysl to Swagger/Open API specification |
-| codegen | Generate code with sysl transform models | 
-| datamodel| ... | 
+| codegen | Generate code with sysl transform models |
+| datamodel| ... |
 | info | Build information for sysl executable |
 | env | Sysl environment variables value |
 
@@ -398,7 +398,7 @@ can either be a string, int32, but not both.
 Protocol buffers is a "language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler". It is a strongly typed binary format used as intermediate representations of Sysl definitions comparable to an abstract syntax tree. The strongly typed protocol buffers are supported in most major programming languages.
 
 Please refer to our developer documentation on how to compile the Protobuf definitions to your preferred porgramming language in order to [create your own Sysl extension]
-(https://github.com/anz-bank/sysl#extending-sysl). If you want to generate human readable, text-based Protobuf output use the `textpb` command.
+(https://github.com/joshcarp/sysl-printing#extending-sysl). If you want to generate human readable, text-based Protobuf output use the `textpb` command.
 
 For the following contents of `hello.sysl`
 

@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/antlr/antlr4/runtime/Go/antlr"
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
 )
 
 func makeExpr(ctx *sysl.SourceContext) *sysl.Expr {

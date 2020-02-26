@@ -7,8 +7,8 @@ import (
 	"strconv"
 	"strings"
 
-	proto "github.com/anz-bank/sysl/pkg/sysl"
 	"github.com/go-openapi/spec"
+	proto "github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/sirupsen/logrus"
 )
 

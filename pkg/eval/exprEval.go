@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anz-bank/sysl/pkg/parse"
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
 	"github.com/golang/protobuf/proto"
+	"github.com/joshcarp/sysl-printing/pkg/parse"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

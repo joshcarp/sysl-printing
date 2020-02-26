@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 

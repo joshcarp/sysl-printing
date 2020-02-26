@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	"github.com/anz-bank/sysl/pkg/importer"
+	"github.com/joshcarp/sysl-printing/pkg/importer"
 	"github.com/spf13/afero"
 	"gopkg.in/alecthomas/kingpin.v2"
 )

@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 	"github.com/sirupsen/logrus/hooks/test"
 
 	"github.com/stretchr/testify/require"

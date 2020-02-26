@@ -4,11 +4,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	"github.com/anz-bank/sysl/pkg/parse"
-	"github.com/anz-bank/sysl/pkg/syslutil"
-	"github.com/anz-bank/sysl/pkg/transforms"
+	"github.com/joshcarp/sysl-printing/pkg/parse"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/transforms"
 	"github.com/pkg/errors"
 	"github.com/spf13/afero"
 	"gopkg.in/alecthomas/kingpin.v2"

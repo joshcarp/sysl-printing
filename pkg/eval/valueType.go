@@ -1,7 +1,7 @@
 package eval
 
 import (
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/pkg/errors"
 )
 

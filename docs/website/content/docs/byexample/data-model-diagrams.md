@@ -12,7 +12,7 @@ CodeWithoutComments = """Project:
     Server:
         Server
     App:
-        App 
+        App
 Server:
     !type id:
         id <: int
@@ -26,7 +26,7 @@ AnotherOne:
 """
 
 Segs = [[
-  
+
       {CodeEmpty= true,CodeLeading= true,CodeRun= false,CodeRendered="""""",DocsRendered= """<p>In this example will use a simple system and start using the sysl command to generate diagrams.</p>
 """,Image = ""},
 
@@ -57,7 +57,7 @@ Segs = [[
 
 ],
 [
-  
+
       {CodeEmpty= false,CodeLeading= true,CodeRun= false,CodeRendered="""<pre class="chroma">
 <span class="nx">export</span> <span class="nx">SYSL_PLANTUML</span><span class="p">=</span><span class="nx">http</span><span class="p">:</span><span class="o">//</span><span class="nx">www</span><span class="p">.</span><span class="nx">plantuml</span><span class="p">.</span><span class="nx">com</span><span class="o">/</span><span class="nx">plantuml</span></pre>""",DocsRendered= """<p>First, make sure to set the environment variable SYSL_PLANTUML</p>
 """,Image = ""},
@@ -80,7 +80,7 @@ Segs = [[
       {CodeEmpty= true,CodeLeading= true,CodeRun= false,CodeRendered="""""",DocsRendered= """<p>NOTE: there is currently a bug where data-types defined in different applications don&rsquo;t render correctly</p>
 """,Image = ""},
 
-      {CodeEmpty= true,CodeLeading= true,CodeRun= false,CodeRendered="""""",DocsRendered= """<p>See <a href="https://github.com/anz-bank/sysl/issues/474">https://github.com/anz-bank/sysl/issues/474</a> for progress updates</p>
+      {CodeEmpty= true,CodeLeading= true,CodeRun= false,CodeRendered="""""",DocsRendered= """<p>See <a href="https://github.com/joshcarp/sysl-printing/issues/474">https://github.com/joshcarp/sysl-printing/issues/474</a> for progress updates</p>
 """,Image = ""},
 
       {CodeEmpty= true,CodeLeading= false,CodeRun= false,CodeRendered="""""",DocsRendered= """<p>project.svg:</p>
@@ -89,13 +89,13 @@ Segs = [[
 
 ],
 [
-  
+
       {CodeEmpty= false,CodeLeading= false,CodeRun= false,CodeRendered="""""",DocsRendered= """""",Image = "/assets/byexample/images/data-model-diagrams9.svg"},
 
 
 ],
 [
-  
+
       {CodeEmpty= false,CodeLeading= true,CodeRun= false,CodeRendered="""<pre class="chroma">
 <span class="nx">sysl</span> <span class="nx">data</span> <span class="o">-</span><span class="nx">o</span> <span class="s">&#34;%(epname).svg&#34;</span> <span class="o">-</span><span class="nx">j</span> <span class="nx">Project</span> <span class="mi">1</span><span class="nx">_project</span><span class="p">.</span><span class="nx">sysl</span></pre>""",DocsRendered= """<p>If seperate data model diagrams are needed for every application, &ldquo;%(epname).svg&rdquo; can be used as the output file, and a data model will be rendered for every application</p>
 """,Image = ""},
@@ -106,13 +106,13 @@ Segs = [[
 
 ],
 [
-  
+
       {CodeEmpty= false,CodeLeading= false,CodeRun= false,CodeRendered="""""",DocsRendered= """""",Image = "/assets/byexample/images/data-model-diagrams9.svg"},
 
 
 ],
 [
-  
+
       {CodeEmpty= false,CodeLeading= false,CodeRun= false,CodeRendered="""""",DocsRendered= """""",Image = "/assets/byexample/images/data-model-diagrams9.svg"},
 
 

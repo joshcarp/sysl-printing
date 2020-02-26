@@ -11,7 +11,7 @@ ID = "modules"
 CodeWithoutComments = """import deps
 import moredeps/moredeps
 import /tests/bananatree
-import //github.com/anz-bank/syslgen-examples/examples/todos
+import //github.com/joshcarp/sysl-printinggen-examples/examples/todos
 import foreign_import_swagger.yaml as com.foo.bar.app ~swagger
 ModelWithDeps [package="model"]:
   !type Response:
@@ -30,7 +30,7 @@ ModelWithDeps [package="model"]:
 """
 
 Segs = [[
-  
+
       {CodeEmpty= false,CodeLeading= true,CodeRun= false,CodeRendered="""<pre class="chroma"><span class="nx">Dep</span> <span class="p">[</span><span class="kn">package</span><span class="p">=</span><span class="s">&#34;dep&#34;</span><span class="p">]:</span>
   <span class="p">!</span><span class="kd">type</span> <span class="nx">Dep</span><span class="p">:</span>
     <span class="nx">id</span> <span class="p">&lt;:</span> <span class="kt">int</span>
@@ -59,7 +59,7 @@ Segs = [[
 
 ],
 [
-  
+
       {CodeEmpty= false,CodeLeading= true,CodeRun= false,CodeRendered="""<pre class="chroma">
 <span class="kn">import</span> <span class="nx">deps</span></pre>""",DocsRendered= """<p>To import a sysl file from the same folder</p>
 """,Image = ""},

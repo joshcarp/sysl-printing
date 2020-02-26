@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	"github.com/anz-bank/sysl/pkg/eval"
+	"github.com/joshcarp/sysl-printing/pkg/eval"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 

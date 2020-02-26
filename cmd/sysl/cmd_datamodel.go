@@ -5,14 +5,14 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/anz-bank/sysl/pkg/diagrams"
-	"github.com/anz-bank/sysl/pkg/sequencediagram"
+	"github.com/joshcarp/sysl-printing/pkg/diagrams"
+	"github.com/joshcarp/sysl-printing/pkg/sequencediagram"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
 	"gopkg.in/alecthomas/kingpin.v2"
 
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/sirupsen/logrus"
 )
 

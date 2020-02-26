@@ -5,9 +5,9 @@ author: "Julia Ogris"
 draft: false
 ---
 
-We, some of the ANZ open source developers, have recently set up what we consider to be good engineering practises for our enterprise-backed open source project [Sysl](https://github.com/anz-bank/sysl). The following is a record of systems and practises we deem essential and the products and platforms we have chosen (in parenthesis):
+We, some of the ANZ open source developers, have recently set up what we consider to be good engineering practises for our enterprise-backed open source project [Sysl](https://github.com/joshcarp/sysl-printing). The following is a record of systems and practises we deem essential and the products and platforms we have chosen (in parenthesis):
 
-* Open Source Licence included with source code ([Apache License 2.0](https://github.com/anz-bank/sysl/blob/master/LICENSE))
+* Open Source Licence included with source code ([Apache License 2.0](https://github.com/joshcarp/sysl-printing/blob/master/LICENSE))
 * Version control system (git & Github)
 * (Write) access control (Github organisation & teams)
 * One step build (GitHub Actions & GoReleaser)(`pip install pytest flake8 -e .` Pysysl)
@@ -15,13 +15,13 @@ We, some of the ANZ open source developers, have recently set up what we conside
 * Continuous integration (GitHub Actions)
 * Code reviews ([Github Code Reviews](https://github.com/features/code-review))
 * Code coverage ([Codecov.io](https://codecov.io/github/anz-bank/sysl/))
-* Automated release process (Specified master branch commit message triggers tag generation and CHANGELOG generation. Generated tags trigger deployment from CI systems. See the [Releasing documentation](https://github.com/anz-bank/sysl/blob/master/docs/releasing.md) for more details)
+* Automated release process (Specified master branch commit message triggers tag generation and CHANGELOG generation. Generated tags trigger deployment from CI systems. See the [Releasing documentation](https://github.com/joshcarp/sysl-printing/blob/master/docs/releasing.md) for more details)
 * Automated quality assurance (Pull requests are blocked until all checks pass)
-* Issue tracking ([Github Issue](https://github.com/anz-bank/sysl/issues) tracking with [template](https://github.com/anz-bank/sysl/tree/master/.github/ISSUE_TEMPLATE))
-* Project Management ([Github projects](https://github.com/anz-bank/sysl/projects))
-* Documentation in same repository as source code ([README](https://github.com/anz-bank/sysl/blob/master/README.md) and [docs/](https://github.com/anz-bank/sysl/blob/master/docs) as starting point)
+* Issue tracking ([Github Issue](https://github.com/joshcarp/sysl-printing/issues) tracking with [template](https://github.com/joshcarp/sysl-printing/tree/master/.github/ISSUE_TEMPLATE))
+* Project Management ([Github projects](https://github.com/joshcarp/sysl-printing/projects))
+* Documentation in same repository as source code ([README](https://github.com/joshcarp/sysl-printing/blob/master/README.md) and [docs/](https://github.com/joshcarp/sysl-printing/blob/master/docs) as starting point)
 * Chat ([Slack](https://anzoss.slack.com/messages/sysl/) & <del>[Gitter](https://gitter.im/anz-bank/sysl)</del>)
-* Status dashboard ([Badges](https://github.com/anz-bank/sysl/blob/master/README.md))
+* Status dashboard ([Badges](https://github.com/joshcarp/sysl-printing/blob/master/README.md))
 
 &nbsp;
 The most involved pieces have been automated quality assurance and release automation. These parts of the Sysl project also keep evolving as we add new quality checks and artefact types. They deserve a closer look.

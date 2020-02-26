@@ -3,7 +3,7 @@ package diagrams
 import (
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"

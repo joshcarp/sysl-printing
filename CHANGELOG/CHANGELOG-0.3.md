@@ -1,20 +1,20 @@
 # CHANGELOG-0.3
 
-## [v0.3.0](https://github.com/anz-bank/sysl/tree/v0.3.0) (2019-08-23)
+## [v0.3.0](https://github.com/joshcarp/sysl-printing/tree/v0.3.0) (2019-08-23)
 
-[Full Changelog](https://github.com/anz-bank/sysl/compare/v0.2.9...v0.3.0)
+[Full Changelog](https://github.com/joshcarp/sysl-printing/compare/v0.2.9...v0.3.0)
 
 **Closed issues:**
 
-- Support group\_by in sequence diagram [\#256](https://github.com/anz-bank/sysl/issues/256)
-- Have one sysl binary that supports multiple modes like textpb, sd, gen [\#210](https://github.com/anz-bank/sysl/issues/210)
+- Support group\_by in sequence diagram [\#256](https://github.com/joshcarp/sysl-printing/issues/256)
+- Have one sysl binary that supports multiple modes like textpb, sd, gen [\#210](https://github.com/joshcarp/sysl-printing/issues/210)
 
 **Merged pull requests:**
 
-- Bump version to 0.3.0 [\#290](https://github.com/anz-bank/sysl/pull/290) ([springwiz](https://github.com/springwiz))
-- Miscellaneous code hygiene [\#288](https://github.com/anz-bank/sysl/pull/288) ([anzdaddy](https://github.com/anzdaddy))
-- Update README.rst [\#287](https://github.com/anz-bank/sysl/pull/287) ([kasunfdo](https://github.com/kasunfdo))
-- Add validator for transforms [\#278](https://github.com/anz-bank/sysl/pull/278) ([kasunfdo](https://github.com/kasunfdo))
+- Bump version to 0.3.0 [\#290](https://github.com/joshcarp/sysl-printing/pull/290) ([springwiz](https://github.com/springwiz))
+- Miscellaneous code hygiene [\#288](https://github.com/joshcarp/sysl-printing/pull/288) ([anzdaddy](https://github.com/anzdaddy))
+- Update README.rst [\#287](https://github.com/joshcarp/sysl-printing/pull/287) ([kasunfdo](https://github.com/kasunfdo))
+- Add validator for transforms [\#278](https://github.com/joshcarp/sysl-printing/pull/278) ([kasunfdo](https://github.com/kasunfdo))
 
 
 
