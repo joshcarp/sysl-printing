@@ -56,8 +56,14 @@ func PrintStatement(S *sysl.Statement) {
 	if action := S.GetAction(); action != nil {
 		PrintAction(action)
 	}
+	if ret := S.GetRet(); ret != nil {
+		PrintReturn(ret)
+	}
 }
 
+func PrintReturn(R *sysl.Return) {
+	fmt.Printf("        return ret <: %s\n", R.Payload)
+}
 func PrintAction(A *sysl.Action) {
 	fmt.Printf("        %s\n", A.GetAction())
 }
