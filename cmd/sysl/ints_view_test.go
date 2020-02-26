@@ -4,10 +4,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
 	"github.com/golang/protobuf/proto"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/stretchr/testify/assert"
 )
 

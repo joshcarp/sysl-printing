@@ -3,7 +3,7 @@ package cmdutils
 import (
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/stretchr/testify/assert"
 )
 

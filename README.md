@@ -1,14 +1,14 @@
 # Sysl
 Match your system implementation and design as consistent as possible
 
-[![Latest Release](https://img.shields.io/github/v/release/anz-bank/sysl?color=%2300ADD8)](https://github.com/anz-bank/sysl/releases)
+[![Latest Release](https://img.shields.io/github/v/release/anz-bank/sysl?color=%2300ADD8)](https://github.com/joshcarp/sysl-printing/releases)
 [![Codecov](https://img.shields.io/codecov/c/github/anz-bank/sysl/master.svg)](https://codecov.io/gh/anz-bank/sysl/branch/master)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fanz-bank%2Fsysl.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fanz-bank%2Fsysl?ref=badge_shield)
 
-[![GitHub Actions Release status](https://github.com/anz-bank/sysl/workflows/Release/badge.svg)](https://github.com/anz-bank/sysl/actions?query=workflow%3ARelease)
-[![GitHub Actions Go-Darwin status](https://github.com/anz-bank/sysl/workflows/Go-Darwin/badge.svg)](https://github.com/anz-bank/sysl/actions?query=workflow%3AGo-Darwin)
-[![GitHub Actions Go-Linux status](https://github.com/anz-bank/sysl/workflows/Go-Linux/badge.svg)](https://github.com/anz-bank/sysl/actions?query=workflow%3AGo-Linux)
-[![GitHub Actions Go-Windows status](https://github.com/anz-bank/sysl/workflows/Go-Windows/badge.svg)](https://github.com/anz-bank/sysl/actions?query=workflow%3AGo-Windows)
+[![GitHub Actions Release status](https://github.com/joshcarp/sysl-printing/workflows/Release/badge.svg)](https://github.com/joshcarp/sysl-printing/actions?query=workflow%3ARelease)
+[![GitHub Actions Go-Darwin status](https://github.com/joshcarp/sysl-printing/workflows/Go-Darwin/badge.svg)](https://github.com/joshcarp/sysl-printing/actions?query=workflow%3AGo-Darwin)
+[![GitHub Actions Go-Linux status](https://github.com/joshcarp/sysl-printing/workflows/Go-Linux/badge.svg)](https://github.com/joshcarp/sysl-printing/actions?query=workflow%3AGo-Linux)
+[![GitHub Actions Go-Windows status](https://github.com/joshcarp/sysl-printing/workflows/Go-Windows/badge.svg)](https://github.com/joshcarp/sysl-printing/actions?query=workflow%3AGo-Windows)
 
 Sysl (pronounced "sizzle") is a open source system specification language. Using Sysl, you
 can specify systems, endpoints, endpoint behaviour, data models and data
@@ -39,15 +39,15 @@ We encourage contributions to this project! Please have a look at the
 
 ## Contributors
 
-This project exists thanks to [all the people who contribute](https://github.com/anz-bank/sysl/graphs/contributors).
+This project exists thanks to [all the people who contribute](https://github.com/joshcarp/sysl-printing/graphs/contributors).
 
 ## Versioning
 
-We use [Semver](https://semver.org/) for versioning. For the versions available, see the [releases](https://github.com/anz-bank/sysl/releases) on this repository.
+We use [Semver](https://semver.org/) for versioning. For the versions available, see the [releases](https://github.com/joshcarp/sysl-printing/releases) on this repository.
 
 ## License
 
-[![License](https://img.shields.io/github/license/anz-bank/sysl)](https://github.com/anz-bank/sysl/blob/master/LICENSE)
+[![License](https://img.shields.io/github/license/anz-bank/sysl)](https://github.com/joshcarp/sysl-printing/blob/master/LICENSE)
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details
 

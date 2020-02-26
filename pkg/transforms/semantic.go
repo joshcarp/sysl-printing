@@ -3,9 +3,9 @@ package transforms
 import (
 	"sort"
 
-	"github.com/anz-bank/sysl/pkg/eval"
-	"github.com/anz-bank/sysl/pkg/sysl"
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/eval"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 )
 
 type semantic struct {

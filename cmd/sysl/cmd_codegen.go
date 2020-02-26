@@ -3,11 +3,11 @@ package main
 import (
 	"fmt"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	"github.com/anz-bank/sysl/pkg/eval"
-	"github.com/anz-bank/sysl/pkg/syslutil"
-	"github.com/anz-bank/sysl/pkg/validate"
+	"github.com/joshcarp/sysl-printing/pkg/eval"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/validate"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 

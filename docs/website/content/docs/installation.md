@@ -26,7 +26,7 @@ Here are several approaches to get start using Sysl:
 
 ## Install the pre-compiled binary
 
-Download the pre-compiled binaries from the [releases page](https://github.com/anz-bank/sysl/releases) and copy to the desired location.
+Download the pre-compiled binaries from the [releases page](https://github.com/joshcarp/sysl-printing/releases) and copy to the desired location.
 
 ## Go get it
 
@@ -35,7 +35,7 @@ Download the pre-compiled binaries from the [releases page](https://github.com/a
 $ go version
 
 # go get it
-$ GO111MODULE=on go get -u github.com/anz-bank/sysl/cmd/sysl
+$ GO111MODULE=on go get -u github.com/joshcarp/sysl-printing/cmd/sysl
 
 # check it works
 $ sysl help
@@ -53,8 +53,8 @@ $ docker run --rm anzbank/sysl:latest help
 
 ```
 $ docker run --rm \
-  -v $PWD:/go/src/github.com/anz-bank/sysl \
-  -w /go/src/github.com/anz-bank/sysl \
+  -v $PWD:/go/src/github.com/joshcarp/sysl-printing \
+  -w /go/src/github.com/joshcarp/sysl-printing \
   anzbank/sysl:latest validate -v ./demo/examples/Modules/model_with_deps.sysl
 ```
 We have used this [Dockerfile](Dockerfile) to create this image.
@@ -64,12 +64,12 @@ We have used this [Dockerfile](Dockerfile) to create this image.
 
 Here you have two options:
 
-1. If you want to contribute to the project, please follow the steps on our [contributing guide](https://github.com/anz-bank/sysl/blob/master/docs/CONTRIBUTING.md).
+1. If you want to contribute to the project, please follow the steps on our [contributing guide](https://github.com/joshcarp/sysl-printing/blob/master/docs/CONTRIBUTING.md).
 2. If just want to build from source for whatever reason, follow the steps bellow:
 
 ```
 # clone it to create a local copy on your computer
-$ git clone https://github.com/anz-bank/sysl.git
+$ git clone https://github.com/joshcarp/sysl-printing.git
 $ cd sysl
 
 # get dependencies using go modules (needs go 1.11+)

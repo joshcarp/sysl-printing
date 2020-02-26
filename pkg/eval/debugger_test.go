@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/parse"
+	"github.com/joshcarp/sysl-printing/pkg/parse"
 	"github.com/spf13/afero"
 
-	"github.com/anz-bank/sysl/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
 
 	"github.com/stretchr/testify/require"
 )

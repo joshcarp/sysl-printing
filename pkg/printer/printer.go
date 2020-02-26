@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 
-	"github.com/anz-bank/sysl/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
 )
 
 func PrintModule(mod *sysl.Module) {

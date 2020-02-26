@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/stretchr/testify/assert"
 )
 

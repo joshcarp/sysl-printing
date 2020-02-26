@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/anz-bank/sysl/pkg/cmdutils"
-	"github.com/anz-bank/sysl/pkg/diagrams"
-	"github.com/anz-bank/sysl/pkg/sequencediagram"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/diagrams"
+	"github.com/joshcarp/sysl-printing/pkg/sequencediagram"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 

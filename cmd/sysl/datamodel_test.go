@@ -4,12 +4,12 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
 	"github.com/sirupsen/logrus/hooks/test"
 
-	"github.com/anz-bank/sysl/pkg/parse"
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/parse"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

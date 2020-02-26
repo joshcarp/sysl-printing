@@ -28,7 +28,7 @@ Prerequisites:
 Clone `sysl` to create a local copy on your computer:
 
 ```sh
-$ git clone https://github.com/anz-bank/sysl.git
+$ git clone https://github.com/joshcarp/sysl-printing.git
 ```
 
 Get dependencies using go modules (needs go 1.11+)
@@ -68,7 +68,7 @@ We use [Github Flow](https://guides.github.com/introduction/flow/index.html), so
 You can follow the documentation on [their website](https://www.conventionalcommits.org).
 
 ## How to report a bug or suggest a feature
-We use GitHub [issues](https://github.com/anz-bank/sysl/issues) to track public bugs and collect enhancement suggestions. Report a bug or suggest a feature by [opening a new issue](https://github.com/anz-bank/sysl/issues/new/choose). Choose the issue template you want and follow the hints; it's that easy!
+We use GitHub [issues](https://github.com/joshcarp/sysl-printing/issues) to track public bugs and collect enhancement suggestions. Report a bug or suggest a feature by [opening a new issue](https://github.com/joshcarp/sysl-printing/issues/new/choose). Choose the issue template you want and follow the hints; it's that easy!
 
 ## How to publish a new release
 
@@ -76,4 +76,4 @@ Please follow the steps in the [releasing](releasing.md) documentaion.
 
 
 ## Any contributions you make will be under the Apache License 2.0
-In short, when you submit code changes, your submissions are understood to be under the same [Apache License 2.0](https://github.com/anz-bank/sysl/blob/master/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.
+In short, when you submit code changes, your submissions are understood to be under the same [Apache License 2.0](https://github.com/joshcarp/sysl-printing/blob/master/LICENSE) that covers the project. Feel free to contact the maintainers if that's a concern.

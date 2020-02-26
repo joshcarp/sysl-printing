@@ -6,4 +6,4 @@ weight: 65
 ---
 
 We encourage contributions to this project! Please have a look at the
-[contributing guide](https://github.com/anz-bank/sysl/blob/master/docs/CONTRIBUTING.md) for more information.
+[contributing guide](https://github.com/joshcarp/sysl-printing/blob/master/docs/CONTRIBUTING.md) for more information.

@@ -5,10 +5,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	"github.com/anz-bank/sysl/pkg/database"
-	"github.com/anz-bank/sysl/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/database"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/alecthomas/kingpin.v2"
 )

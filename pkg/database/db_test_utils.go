@@ -4,7 +4,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 	"github.com/stretchr/testify/assert"
 )
 

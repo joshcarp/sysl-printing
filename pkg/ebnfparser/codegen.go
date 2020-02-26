@@ -8,9 +8,9 @@ import (
 
 	"github.com/spf13/afero"
 
-	"github.com/anz-bank/sysl/pkg/eval"
+	"github.com/joshcarp/sysl-printing/pkg/eval"
 
-	"github.com/anz-bank/sysl/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/sirupsen/logrus"
 )
 

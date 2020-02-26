@@ -3,11 +3,11 @@ package main
 import (
 	"regexp"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
-	"github.com/anz-bank/sysl/pkg/diagrams"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/diagrams"
 
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/alecthomas/kingpin.v2"
 )

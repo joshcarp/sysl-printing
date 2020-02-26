@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/mock"
 
-	"github.com/anz-bank/sysl/pkg/sysl"
 	"github.com/golang/protobuf/jsonpb"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
 )
 
 func (m *mockEndpointLabeler) LabelEndpoint(p *EndpointLabelerParam) string {

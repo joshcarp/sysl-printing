@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 	"github.com/sirupsen/logrus/hooks/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"

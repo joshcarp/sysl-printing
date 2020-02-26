@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"sort"
 
-	sysl "github.com/anz-bank/sysl/pkg/sysl"
+	sysl "github.com/joshcarp/sysl-printing/pkg/sysl"
 	"github.com/pkg/errors"
 	"github.com/sirupsen/logrus"
 )

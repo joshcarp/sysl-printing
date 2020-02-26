@@ -1,4 +1,4 @@
-# See related documentation in https://github.com/anz-bank/sysl/blob/master/docs/releasing.md
+# See related documentation in https://github.com/joshcarp/sysl-printing/blob/master/docs/releasing.md
 name: Release
 
 on:
@@ -61,7 +61,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # FIXME: sysl_js hasn't been rebuilt for months and it is out of date.
-      # If sysl_js works again, please add NPM_PUBLISH_TOKEN to GitHub secrets 
+      # If sysl_js works again, please add NPM_PUBLISH_TOKEN to GitHub secrets
       # and uncomment this step.
       # - name: Release sysl_js
       #   run: cd unsorted/sysl_js && NPM_AUTH_TOKEN=$ npm publish

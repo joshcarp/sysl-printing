@@ -17,7 +17,7 @@ import (
 	"github.com/alecthomas/chroma/formatters/html"
 	"github.com/alecthomas/chroma/lexers"
 	"github.com/alecthomas/chroma/styles"
-	"github.com/anz-bank/sysl/docs/website/byexample/syslchroma"
+	"github.com/joshcarp/sysl-printing/docs/website/byexample/syslchroma"
 	"github.com/russross/blackfriday"
 	"gopkg.in/yaml.v2"
 )

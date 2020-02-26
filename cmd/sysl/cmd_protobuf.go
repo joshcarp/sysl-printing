@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	"github.com/anz-bank/sysl/pkg/pbutil"
+	"github.com/joshcarp/sysl-printing/pkg/pbutil"
 	"github.com/sirupsen/logrus"
 	"gopkg.in/alecthomas/kingpin.v2"
 )

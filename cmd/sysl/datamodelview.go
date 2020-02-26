@@ -5,9 +5,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/anz-bank/sysl/pkg/cmdutils"
+	"github.com/joshcarp/sysl-printing/pkg/cmdutils"
 
-	proto "github.com/anz-bank/sysl/pkg/sysl"
+	proto "github.com/joshcarp/sysl-printing/pkg/sysl"
 )
 
 const relationArrow = `}--`

@@ -3,8 +3,8 @@ package main
 import (
 	"testing"
 
-	"github.com/anz-bank/sysl/pkg/printer"
-	"github.com/anz-bank/sysl/pkg/syslutil"
+	"github.com/joshcarp/sysl-printing/pkg/printer"
+	"github.com/joshcarp/sysl-printing/pkg/syslutil"
 	"github.com/sirupsen/logrus"
 )
 

@@ -7,11 +7,11 @@ import (
 
 	"github.com/spf13/afero"
 
-	"github.com/anz-bank/sysl/pkg/sysl"
+	"github.com/joshcarp/sysl-printing/pkg/sysl"
 
 	"github.com/alecthomas/assert"
 
-	"github.com/anz-bank/sysl/pkg/eval"
+	"github.com/joshcarp/sysl-printing/pkg/eval"
 )
 
 func loadGrammarFromText(t *testing.T, text string, start string) *EbnfGrammar {
