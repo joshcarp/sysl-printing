@@ -10,6 +10,7 @@ import (
 )
 
 func PrintModule(mod *sysl.Module) {
+
 	for _, A := range mod.Apps {
 		PrintApplication(A)
 	}
@@ -55,13 +56,16 @@ func PrintEndpoint(E *sysl.Endpoint) {
 
 func PrintTypeDecl(key string, t *sysl.Type) {
 	fmt.Printf("    !type %s:\n", key)
-	for key, val := range t.GetTuple().AttrDefs {
-		typeClass, typeIdent := syslutil.GetTypeDetail(val)
-		if typeClass == "primitive" {
-			typeIdent = strings.ToLower(typeIdent)
+	if tuple := t.GetTuple(); tuple != nil {
+		for key, val := range tuple.AttrDefs {
+			typeClass, typeIdent := syslutil.GetTypeDetail(val)
+			if typeClass == "primitive" {
+				typeIdent = strings.ToLower(typeIdent)
+			}
+			fmt.Printf("        %s <: %s\n", key, typeIdent)
 		}
-		fmt.Printf("        %s <: %s\n", key, typeIdent)
 	}
+
 }
 
 func PrintStatement(S *sysl.Statement) {
@@ -79,6 +83,7 @@ func PrintStatement(S *sysl.Statement) {
 func PrintReturn(R *sysl.Return) {
 	fmt.Printf("        return ret <: %s\n", R.Payload)
 }
+
 func PrintAction(A *sysl.Action) {
 	fmt.Printf("        %s\n", A.GetAction())
 }
@@ -97,5 +102,5 @@ func PrintType(T *sysl.Type) string {
 }
 
 func PrintCall(c *sysl.Call) {
-	fmt.Printf("        %s <- %s\n", c.Target.GetPart()[0], c.GetEndpoint())
+	fmt.Printf("        %s <- %s\n", strings.Join(c.Target.GetPart(), ""), c.GetEndpoint())
 }
