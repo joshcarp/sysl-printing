@@ -94,6 +94,21 @@ func PrintAttrs(key string, A *sysl.Attribute) {
 }
 
 func ParamType(P *sysl.Param) string {
+	if P.Type == nil {
+		return ""
+	}
+	if P.Type.GetTypeRef() == nil {
+		return ""
+	}
+	if P.Type.GetTypeRef().Ref == nil {
+		return ""
+	}
+	if P.Type.GetTypeRef().Ref.Appname == nil {
+		return ""
+	}
+	if P.Type.GetTypeRef().Ref.Appname.Part == nil {
+		return ""
+	}
 	return strings.Join(P.Type.GetTypeRef().Ref.Appname.Part, "")
 }
 
