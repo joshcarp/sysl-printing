@@ -1,6 +1,5 @@
 package printer
 
-import "C"
 import (
 	"fmt"
 	"strings"
@@ -60,7 +59,7 @@ func PrintStatement(S *sysl.Statement) {
 }
 
 func PrintAction(A *sysl.Action) {
-	fmt.Println(A.GetAction())
+	fmt.Printf("        %s\n", A.GetAction())
 }
 
 func PrintAttrs(key string, A *sysl.Attribute) {
@@ -76,6 +75,6 @@ func PrintType(T *sysl.Type) string {
 	return strings.Join(T.GetTypeRef().Ref.Appname.Part, "")
 }
 
-func PrintCall(C *sysl.Call) {
-	fmt.Printf("        %s <- %s\n", C.Target.Part[0], C.Endpoint)
+func PrintCall(c *sysl.Call) {
+	fmt.Printf("        %s <- %s\n", c.Target.GetPart()[0], c.GetEndpoint())
 }
